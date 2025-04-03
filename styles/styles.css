@@ -284,11 +284,7 @@ main{
     border-radius: 30px;
 }
 
-.nosotros-footer{
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
+
 
 /* MAIN CUENTA --------------------------------------------------------------------- */
 
@@ -539,8 +535,6 @@ main{
     color: #fff0e4;
 }
 
-
-
 /* FOOTER -------------------------------------------------------------------------- */
 
 footer{
@@ -591,53 +585,63 @@ footer{
 
 /* MEDIAS QUERIES ------------------------------------------------------------------ */
 
-@media (max-width: 768px) {
+@media (max-width: 320px) {
 
-    .main-nosotros{
-        margin: 0;
-    }
-
-    .nosotros-div{
+    .main-enciclopedia{
         display: flex;
         flex-direction: column;
-        padding: 24px;
     }
 
-    .main-cuenta{
+    .enciclopedia-div-plantas-fila{
+        width: 100%;
         display: flex;
         flex-direction: column;
-        align-items: center;
     }
 
-    .cuenta-div-form form{
+    .enciclopedia-planta{
         width: 100%;
     }
 
-    .cuenta-div-form button{
-        width: 100%;
+    .enciclopedia-h2{
+        font-size: 2rem;
+    }
+
+    .enciclopedia-p{
+        font-size: 1rem;
     }
 
     footer{
         display: flex;
         flex-direction: column;
+        width: 100%;
         height: auto;
     }
 
     .footer-div-texto{
         width: 100%;
+        font-size: 1rem;
+
     }
 
-    .footer-div-redes{
-        display: flex;
-        flex-direction: column;
+    .footer-div-redes-seguinos{
         width: 100%;
     }
 
-    .footer-div-redes-iconos{
+    .footer-redes-seguinos{
+        margin: 0;
+        font-size: 1rem;
+    }
+
+    .footer-lista-iconos{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .footer-div-redes{
+        width: 100%;
         display: flex;
-        justify-content: center;
+        flex-direction: column;
     }
 }
-
-
 
