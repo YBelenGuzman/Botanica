@@ -5,6 +5,14 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    width: 100%;
 }
 
 /* HEADER -------------------------------------------------------------------------- */
@@ -576,6 +584,7 @@ footer{
     width: 50%;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .footer-div-redes-seguinos{
@@ -593,14 +602,19 @@ footer{
 }
 
 .footer-lista-iconos{
-    display: flex;
     gap: 24px;
     list-style: none;
     font-size: 30px;
     margin:0;
+    display: flex;
+    
 }
 
 .footer-lista-iconos a:visited{
+    color: #fff0e4;
+}
+
+.footer-redes-li a{
     color: #fff0e4;
 }
 
@@ -609,6 +623,7 @@ footer{
 @media (max-width: 767px) {
 
     .main-enciclopedia{
+        width: 100%;
         display: flex;
         flex-direction: column;
     }
@@ -641,7 +656,6 @@ footer{
     .footer-div-texto{
         width: 100%;
         font-size: 1rem;
-
     }
 
     .footer-div-redes-seguinos{
@@ -657,12 +671,16 @@ footer{
         width: 100%;
         margin: 0;
         padding: 0;
+        display: flex;
+        justify-content: center;
     }
 
     .footer-div-redes{
         width: 100%;
         display: flex;
         flex-direction: column;
+        align-items: center;
     }
+
 }
 
