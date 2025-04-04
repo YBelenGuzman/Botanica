@@ -623,6 +623,41 @@ footer{
 
 /* MEDIAS QUERIES ------------------------------------------------------------------ */
 
+@media (max-width: 991px) {
+
+    /*ENCICLOPEDIA*/
+    
+    .enciclopedia-div-plantas-fila{
+        flex-wrap: wrap;
+    }
+
+    .enciclopedia-planta{
+        flex-shrink: 1;
+    }
+
+    /*CUENTA*/
+    .main-cuenta{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cuenta-div-form{
+        width: 100%;
+        margin: 10% 0;
+    }
+
+    .cuenta-div-img{
+        display: none;
+    }
+
+    .cuenta-h2{
+        font-size: 5.5rem;
+    }
+
+}
+
 @media (max-width: 767px) {
 
     /*ENCICLOPEDIA*/
@@ -711,17 +746,7 @@ footer{
 
 }
 
-@media (max-width: 991px) {
-
-    /*ENCICLOPEDIA*/
-    
-    .enciclopedia-div-plantas-fila{
-        flex-wrap: wrap;
-    }
-
-    .enciclopedia-planta{
-        flex-shrink: 1;
-    }
+@media (max-width: 576px) {
 
     /*CUENTA*/
     .main-cuenta{
@@ -741,8 +766,7 @@ footer{
     }
 
     .cuenta-h2{
-        font-size: 5.5rem;
+        font-size: 4rem;
     }
-
 }
 
