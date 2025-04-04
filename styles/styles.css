@@ -68,12 +68,13 @@ main{
 
 .botanica-h1{
     font-size: 80px;
-    padding: 24px;
+    padding: 24px 24px 0 24px;
 }
 
 .botanica-p{
-    font-size: 32px;
+    font-size: 1.5rem;
     padding: 0 24px 24px 24px ;
+    margin:0;
 }
 
 .botanica-button{
@@ -120,7 +121,13 @@ main{
     justify-content: center;
     overflow: hidden;
     width: 75%;
-    height: 150px;
+    height: auto;
+}
+
+.planta-div-reverse{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .planta-div-img{
@@ -218,7 +225,7 @@ main{
     flex: 1;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 24px;
+    padding: 3.5% 0;
 }
 
 .nosotros-div{
@@ -346,7 +353,6 @@ main{
     height: 100%;
     object-fit: cover;
 }
-
 
 /* ENCICLOPEDIA -------------------------------------------------------------------- */
 
@@ -510,7 +516,11 @@ main{
     padding-bottom: 10px;
 }
 
-.comunidad-card-body a:visited{
+.comunidad-card-body-a{
+    color: #fff0e4;
+}
+
+.comunidad-card-body-a:visited{
     color: #fff0e4;
 }
 
@@ -641,6 +651,69 @@ footer{
             font-size: 1rem;
         }
 
+        /*COMUNIDAD*/
+    .comunidad-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-shrink: 1;
+    }
+
+    /*INDEX*/
+    .main-botanica{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section-botanica{
+        width: 100%;
+    }
+
+    .botanica-h1{
+        padding: 24px 24px 0 24px
+    }
+
+    .botanica-p{
+        font-size: 1.5rem;
+    }
+
+    .botanica-img{
+        height: auto;
+        width: auto;
+    }
+
+    .section-planta{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .planta-p{
+        padding:0 24px ;
+    }
+
+    .planta-div-reverse{
+        display: flex;
+        justify-content: center;
+    }
+
+    .planta-div{
+        height: auto;
+    }
+
+    .planta-div-texto{
+        padding: 10px;
+    }
+
+    .planta-div-p{
+        margin: 0;
+    }
+
+    .articulos-h2{
+        margin: 0;
+    }
+        
 }
 
 @media (max-width: 767px) {
@@ -730,6 +803,108 @@ footer{
         display: none;
     }
 
+    /*COMUNIDAD*/
+    .comunidad-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    /*INDEX*/
+
+    .main-botanica{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .section-botanica{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .botanica-div-texto{
+        width: 100%;
+    }
+
+    .botanica-div-img{
+        display: none;
+    }
+
+    .botanica-h1{
+        margin: 0;
+        padding: 0 24px;
+    }
+
+    .botanica-p{
+        font-size: 1.5rem;
+        padding: 0 24px;
+    }
+
+    .section-planta{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .planta-p{
+        padding: 0 24px;
+        font-size: 1rem;
+    }
+
+    .planta-div{
+        width: 80%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .planta-div-img{
+        width: 250px;
+        height: 250px;
+    }
+    
+    .planta-div-texto{
+        width: 100%;
+        height: auto;
+        padding: 15px;
+    }
+    
+    .planta-div-p{
+        width: 100%;
+        margin: 0;
+    }
+
+    .planta-div-reverse{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .articulos-div{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .articulos-div-p{
+        text-align: center;
+        font-size: 1rem;
+        width: 100%;
+        margin-top: 3px;
+    }
+
+    .articulos-img{
+        width:250px ;
+        height: 250px;
+    }
+
     /*FOOTER*/
 
     footer{
@@ -792,6 +967,25 @@ footer{
 
     .cuenta-h2{
         font-size: 4rem;
+    }
+
+    /*COMUNIDAD*/
+    .comunidad-main{
+        width: 100%;
+    }
+
+    .comunidad-h2{
+        font-size: 3rem;
+        width: 100%;
+    }
+
+    .comunidad-p{
+        font-size: 1.5rem;
+    }
+
+    .comunidad-container{
+        display: flex;
+        flex-direction: column;
     }
 }
 
