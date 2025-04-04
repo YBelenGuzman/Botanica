@@ -244,7 +244,7 @@ main{
     align-items: center;
 }
 
-.nosotros-h2{
+.nosotros-h1{
     color: #733016;
     font-size: 72px;
     text-align: center;
@@ -291,7 +291,7 @@ main{
     margin: 1.9% 0;
 }
 
-.cuenta-h2{
+.cuenta-h1{
     color: #733016;
     padding-top: 24px;
     margin: 0;
@@ -365,7 +365,7 @@ main{
     align-items: center;
 }
 
-.enciclopedia-h2{
+.enciclopedia-h1{
     font-family: 'Montserrat';
     margin-top: 32px;
     font-size: 48px;
@@ -455,7 +455,7 @@ main{
     flex-direction: column;
 }
 
-.comunidad-h2{
+.comunidad-h1{
     font-size: 64px;
     color: #733016;
     font-family: 'Montserrat';
