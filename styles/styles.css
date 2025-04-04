@@ -35,55 +35,6 @@ html, body {
     color: #fff0e4;
     font-family: 'Darker Grotesque';
 }
-/*.nav-logo{
-    height: 40px;
-    width: 40px;
-    margin-left: 56px;
-}
-
-nav{
-    background-color: #733016 ;
-    height: 64px;
-    font-family: 'Darker Grotesque';
-    font-size: 20px;
-}
-
-.nav-contenedor{
-    display: flex;
-    justify-content:space-between;
-    align-items: center;
-}
-
-.nav-contenedor-logo-lista{
-    display: flex;
-    flex-direction: row;
-    gap: 24px;
-    align-items: center;
-}
-
-.nav-contenedor-lista{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 24px;
-}
-
-.nav-li{
-    list-style: none;
-    text-decoration: none;
-}
-.nav-a{
-    text-decoration: none;
-}
-
-.nav-a:visited{
-    color: #fff0e4;
-}
-
-.nav-icono-cuenta{
-    font-size: 30px;
-    margin-right: 56px;
-}*/
 
 /* MAIN INDEX -------------------------------------------------------------------------- */
 
@@ -264,6 +215,7 @@ main{
 
 .main-nosotros{
     display: flex;
+    flex: 1;
     flex-direction: column;
     align-items: center;
     margin-bottom: 24px;
@@ -273,7 +225,6 @@ main{
     display: flex;
     align-items: center;
     gap: 30px;
-    height: 505px;
     width: 80%;
     color: #733016;
     overflow: hidden;
@@ -656,6 +607,40 @@ footer{
         font-size: 5.5rem;
     }
 
+        /*NOSOTROS*/
+
+        .main-nosotros{
+            width: 100%;
+            height: auto;
+            margin-bottom: 0;
+        }
+    
+        .nosotros-div{
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 0;
+            padding: 3%;
+        }
+    
+        .nosotros-footer{
+            position: relative;
+        }
+    
+        .nosotros-body{
+            display: flex;
+            flex-direction: column;
+        }
+    
+        .nosotros-div-img{
+            display: flex;
+        }
+    
+        .nosotros-p{
+            font-size: 1rem;
+        }
+
 }
 
 @media (max-width: 767px) {
@@ -685,6 +670,67 @@ footer{
     .enciclopedia-p{
         font-size: 1rem;
     }
+
+    /*CUENTA*/
+    .main-cuenta{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cuenta-div-form{
+        width: 100%;
+        margin: 10% 0;
+    }
+
+    .cuenta-div-img{
+        display: none;
+    }
+
+    .cuenta-h2{
+        font-size: 4rem;
+    }
+
+    /*NOSOTROS*/
+
+    .main-nosotros{
+        width: 100%;
+        height: auto;
+        margin-bottom: 0;
+    }
+
+    .nosotros-div{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        padding: 3%;
+    }
+
+    .nosotros-footer{
+        position: relative;
+    }
+
+    .nosotros-body{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nosotros-div-img{
+        display: flex;
+    }
+
+    .nosotros-p{
+        font-size: 1rem;
+    }
+
+    .nosotros-img-none{
+        display: none;
+    }
+
+    /*FOOTER*/
 
     footer{
         display: flex;
@@ -721,27 +767,6 @@ footer{
         display: flex;
         flex-direction: column;
         align-items: center;
-    }
-
-    /*CUENTA*/
-    .main-cuenta{
-        width: 100%;
-        height: auto;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .cuenta-div-form{
-        width: 100%;
-        margin: 10% 0;
-    }
-
-    .cuenta-div-img{
-        display: none;
-    }
-
-    .cuenta-h2{
-        font-size: 4rem;
     }
 
 }
