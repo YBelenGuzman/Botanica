@@ -319,8 +319,8 @@ main{
 }
 
 .main-cuenta{
+    height: auto;
     display: flex;
-    height: 505px
 }
 
 .cuenta-div-form{
@@ -329,12 +329,15 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 10px;
+    margin: 1.9% 0;
 }
 
 .cuenta-h2{
     color: #733016;
     padding-top: 24px;
-    font-size: 64px;
+    margin: 0;
+    font-size: 4rem;
 }
 
 .cuenta-form{
@@ -342,7 +345,7 @@ main{
     flex-direction: column;
     gap: 15px;
     width: 50%;
-    margin: 18px 0 18px 0;
+    margin: 5%;
 }
 
 .cuenta-input{
@@ -360,7 +363,7 @@ main{
     text-align: center;
     color: #fff0e4;
     background-color: #733016;
-    width: 25%;
+    width: 30%;
     height: 35px;
     border: #733016 solid;
     border-radius: 20px;
@@ -383,18 +386,16 @@ main{
 
 .cuenta-div-img{
     width: 50%;
+    height: auto;
+    overflow: hidden;
 }
 
 .cuenta-img{
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 
-.cuenta-footer{
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
 
 /* ENCICLOPEDIA -------------------------------------------------------------------- */
 
@@ -443,6 +444,7 @@ main{
 
 .enciclopedia-div-plantas-fila{
     display: flex;
+    flex-wrap: wrap;
     gap: 15px;
 }
 
@@ -453,6 +455,8 @@ main{
     overflow: hidden;
     width: 50%;
     gap: 24px;
+    flex: 1 1 calc(25% - 15px);
+    min-width: 250px;
 }
 
 .enciclopedia-img{
@@ -607,7 +611,6 @@ footer{
     font-size: 30px;
     margin:0;
     display: flex;
-    
 }
 
 .footer-lista-iconos a:visited{
@@ -621,6 +624,8 @@ footer{
 /* MEDIAS QUERIES ------------------------------------------------------------------ */
 
 @media (max-width: 767px) {
+
+    /*ENCICLOPEDIA*/
 
     .main-enciclopedia{
         width: 100%;
@@ -651,6 +656,7 @@ footer{
         flex-direction: column;
         width: 100%;
         height: auto;
+        padding:1% 0 0 0;
     }
 
     .footer-div-texto{
@@ -680,6 +686,62 @@ footer{
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+
+    /*CUENTA*/
+    .main-cuenta{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cuenta-div-form{
+        width: 100%;
+        margin: 10% 0;
+    }
+
+    .cuenta-div-img{
+        display: none;
+    }
+
+    .cuenta-h2{
+        font-size: 4rem;
+    }
+
+}
+
+@media (max-width: 991px) {
+
+    /*ENCICLOPEDIA*/
+    
+    .enciclopedia-div-plantas-fila{
+        flex-wrap: wrap;
+    }
+
+    .enciclopedia-planta{
+        flex-shrink: 1;
+    }
+
+    /*CUENTA*/
+    .main-cuenta{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cuenta-div-form{
+        width: 100%;
+        margin: 10% 0;
+    }
+
+    .cuenta-div-img{
+        display: none;
+    }
+
+    .cuenta-h2{
+        font-size: 5.5rem;
     }
 
 }
